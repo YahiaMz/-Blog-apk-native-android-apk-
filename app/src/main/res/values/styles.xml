@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<style name="AppTheme.bottomAppBar" parent="Theme.MaterialComponents.Light.NoActionBar">
+    <item name="colorPrimary">@color/light_blue</item>
+    <item name="colorPrimaryDark">@color/blue_light</item>
+    <item name="colorAccent">@color/light_green </item>
+    <item name="android:windowAnimationStyle">@style/animation</item>
+</style>
+
+
+    <style name="animation">
+        <item name="android:windowEnterAnimation" >@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+</resources>

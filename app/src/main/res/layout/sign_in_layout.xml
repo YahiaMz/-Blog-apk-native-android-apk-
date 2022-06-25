@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="50dp"
+        android:orientation="vertical">
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="90dp"
+            android:fontFamily="@font/pacifico_regular"
+            android:gravity="center"
+
+            android:text="Blog app"
+            android:textAllCaps="false"
+            android:textColor="@color/light_grey"
+            android:textSize="40dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/emailTxtLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+
+
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/EmailSignIn"
+                android:drawableStart="@drawable/email"
+                android:drawablePadding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:text="mzyahia1680@gmail.com"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="10dp"
+                android:textSize="16dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/passwordTxtLayout"
+            app:passwordToggleEnabled="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:id="@+id/passwordSignIn"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:text=""
+                android:drawablePadding="8dp"
+                android:drawableStart="@drawable/lock"
+                android:inputType="textPassword"
+                android:paddingLeft="10dp"
+                android:textSize="16dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/singIn_Btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:background="@drawable/next_skip_bg"
+            android:backgroundTint="@color/blue_light"
+            android:text="Sign In"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="17dp" />
+
+
+        <LinearLayout
+            android:gravity="end"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp">
+
+            <TextView
+
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Not have account yet?" />
+
+            <TextView
+                android:layout_marginHorizontal="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="regester"
+                android:textStyle="bold"
+                android:textColor="@color/blue"
+                android:textSize="17dp"
+                android:id="@+id/txtRegester"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

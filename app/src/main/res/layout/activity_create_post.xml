@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Create_Post">
+
+
+
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:src="@drawable/back_arraow"
+            android:id="@+id/backBtn"
+            >
+        </ImageButton>
+    </com.google.android.material.appbar.MaterialToolbar>
+
+    <EditText
+
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:padding="10dp"
+        android:textSize="16dp"
+        android:hint="your Description here"
+        android:gravity="top"
+        android:id="@+id/postcreate_desc"
+        android:background="@drawable/desc_bg"
+
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/postcreate_change_image"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:clickable="true"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="20dp"
+        >
+
+        <ImageView
+
+            android:id="@+id/create_post_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:src="@color/blue_light" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:layout_marginHorizontal="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SUbmit"
+        android:textColor="@color/white"
+        android:id="@+id/create_postBtn"
+        android:background="@drawable/next_skip_bg"
+        android:backgroundTint="@color/blue_light"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        />
+
+
+</LinearLayout>
+

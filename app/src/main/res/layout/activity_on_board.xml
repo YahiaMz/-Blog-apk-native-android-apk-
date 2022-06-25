@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OnBoardActivity">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btns_reltiveLayout"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="0dp"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <RelativeLayout
+        android:id="@+id/btns_reltiveLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+
+
+        android:background="@color/light_blue"
+        android:orientation="horizontal">
+
+
+        <Button
+
+            android:id="@+id/Skip_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginHorizontal="32dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/next_skip_bg"
+            android:text="Skip"
+            android:textAllCaps="false"
+            android:textColor="@color/light_grey"
+            android:textSize="16sp" />
+
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginHorizontal="32dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/next_skip_bg"
+            android:text="Next"
+            android:textAllCaps="false"
+            android:textColor="@color/light_grey"
+            android:textSize="16sp" />
+
+
+        <LinearLayout
+            android:id="@+id/dots"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+    </RelativeLayout>>
+
+</RelativeLayout>

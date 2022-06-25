@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HOME_acivity">
+
+    <FrameLayout
+        android:background="#e0e0e0"
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/condinate_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:clickable="false"
+        android:fitsSystemWindows="false"
+        android:focusable="false">
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/bottom_app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/transparent"
+            android:clickable="false"
+            android:theme="@style/AppTheme.bottomAppBar"
+            app:contentInsetStart="0dp"
+            app:contentInsetStartWithNavigation="0dp"
+            app:fabAlignmentMode="center"
+            app:fabCradleMargin="10dp"
+            app:fabCradleRoundedCornerRadius="30dp"
+            app:fabCradleVerticalOffset="5dp"
+            app:hideOnScroll="true">
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottom_NavigationView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:outlineAmbientShadowColor="@color/transparent"
+                android:outlineSpotShadowColor="@color/transparent"
+                app:labelVisibilityMode="unlabeled"
+                app:menu="@menu/main_menu">
+
+
+            </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+        </com.google.android.material.bottomappbar.BottomAppBar>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/blue_light"
+            android:src="@drawable/add"
+            app:backgroundTint="@color/blue"
+            app:fabSize="normal"
+            app:layout_anchor="@+id/bottom_app_bar"
+            app:layout_anchorGravity="top|center"
+            app:maxImageSize="30dp"
+            app:rippleColor="@color/white">
+
+
+        </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</RelativeLayout>

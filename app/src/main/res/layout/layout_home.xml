@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+
+
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Home_tool_bar"
+        android:background="@color/white"
+        android:elevation="1dp"
+        app:title=" "
+        android:theme="@style/AppTheme.bottomAppBar"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Blog App"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="@color/light_blue"
+            android:textAllCaps="false"
+            android:fontFamily="@font/pacifico_regular"
+            />
+
+
+    </com.google.android.material.appbar.MaterialToolbar>
+
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/homeSwipe_layout"
+    >
+<androidx.recyclerview.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/recycler_view"
+    tools:listitem="@layout/post_layout"
+    >
+
+
+</androidx.recyclerview.widget.RecyclerView>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+</LinearLayout>

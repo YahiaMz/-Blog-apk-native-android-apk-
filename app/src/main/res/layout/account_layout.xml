@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+
+
+    <LinearLayout
+        android:id="@+id/testingAnimatedDrawable"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:orientation="vertical"
+        android:background="@drawable/account_drawable"
+        >
+        <ImageButton
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/account_layout_logoutImgBtn"
+            android:layout_gravity="right"
+            android:src="@drawable/ic_logout"
+            android:background="@color/transparent"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+
+            />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:padding="5dp"
+            android:id="@+id/account_imageUser"
+            android:layout_width="150dp"
+            android:layout_marginTop="8dp"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            app:strokeColor="@color/white"
+            app:strokeWidth="2dp"
+            android:src="@color/white"
+            android:layout_gravity="center_horizontal"
+            >
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/account_layout_user_name"
+        android:text="Mazouzi Bouyahia"
+        android:textColor="@color/white"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal"
+        />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/account_layout_user_email"
+            android:text="mzyahia168@gmail.com"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            android:textStyle="normal"
+            android:layout_marginBottom="8dp"
+            android:gravity="center_horizontal"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="0.8"
+        android:orientation="vertical"
+        android:paddingTop="32dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:src="@drawable/likes_posts" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="Likes posts"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/next" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginHorizontal="8dp"
+            android:background="@color/black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:padding="1dp"
+                android:src="@drawable/ic_post" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="My Posts"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/next" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginHorizontal="8dp"
+            android:background="@color/black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:padding="1dp"
+                android:src="@drawable/edit" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="Edit"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/next" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginHorizontal="8dp"
+            android:background="@color/black" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
